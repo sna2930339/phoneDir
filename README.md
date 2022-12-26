@@ -6,7 +6,7 @@
         作者: 20软件工程一班  李瑜
         学号: 2040102155
 
-             数据库：MySql
+             数据库：MySql 8.0.29
              使用的技术：Servlet + JDBC + JSP
              服务器: Tomcat 10.0.20  （需要10以及以上版本）
              开发工具：IntelliJ IDEA
