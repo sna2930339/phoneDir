@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>密码错误</title>
+    <style type="text/css">
+        body{
+            background-size: 100%;
+        }
+    </style>
+    <script type="text/javascript">
+        var time = 5;
+        function timer() {
+            if (time <=0){
+                window.history.back();
+            }else{
+                var div1 = document.getElementById("div");
+                div1.innerText = "密码错误，请检查后重新输入,"+time+"秒后自动返回登录页面";
+                time--;
+            }
+        }
+        function start() {
+            setInterval(timer,1000);
+        }
+        window.onload = start();
+
+    </script>
+</head>
+<body background="R-C.jpg">
+<h1>密码错误.....</h1>
+    <div id="div"></div>
+    <div id="div1">若长时间未返回,请<a href="javascript:void(0)" onclick="window.location = 'index.jsp'">点击此处</a></div>
+<hr>
+
+<h3 style="position: absolute;right: 10%;bottom: 10%;color: palegreen"> 2040102155李瑜   snpyy</h3>
+</body>
+</html>
